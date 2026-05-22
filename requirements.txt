@@ -1,0 +1,20 @@
+# NVIDIA GPU JAX build. This installs jaxlib plus CUDA/cuDNN pip wheels.
+# If your machine is on CUDA 13 with a recent enough driver, replace this with:
+# jax[cuda13]>=0.6.0
+jax[cuda12]>=0.6.0
+flax>=0.10.0
+optax>=0.2.0
+orbax-checkpoint>=0.11.0
+jaxlie>=1.5.0
+jaxkd[cuda]>=0.1.2
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+trimesh>=4.0.0
+open3d>=0.17.0
+robust-laplacian>=1.0.0
+scikit-learn>=1.3.0
+scikit-image>=0.23.0
+
+# jaxkd[cuda] installs the optional CUDA extension used by --jaxkd-backend cuda.

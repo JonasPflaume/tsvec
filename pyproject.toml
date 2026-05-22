@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsvec-ergodic"
+version = "0.1.0"
+description = "Release code for TSVec ergodic trajectory optimization."
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tsvec*", "neural_sdf*", "lbfgsb*"]
