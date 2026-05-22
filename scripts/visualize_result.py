@@ -47,7 +47,7 @@ def main() -> None:
     import jax.numpy as jnp
     from jaxlie import SO3
 
-    from lbfgsb.point_cloud_utils import process_point_cloud_match_sdf
+    from helper.point_cloud_utils import process_point_cloud_match_sdf
     from neural_sdf.checkpoint import load_sdf_model
     from tsvec.param import Param
     from tsvec.planner import TSVecState, config as tsvec_config

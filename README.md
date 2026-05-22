@@ -16,7 +16,7 @@ provided Open3D visualization.
   mustardbottle, pig, spot, and torus.
 - `tsvec/`: TSVec planner, ergodic objective, metrics, and visualization code.
 - `neural_sdf/`: neural SDF model, training, checkpoint, and grid utilities.
-- `lbfgsb/`: point-cloud and spectral utilities used by the ergodic objective.
+- `helper/`: point-cloud and spectral utilities used by the ergodic objective.
 - `scripts/`: runnable entry points for training, planning, and visualization.
 
 SDF checkpoints are written to `checkpoints/sdf_model/` when you run

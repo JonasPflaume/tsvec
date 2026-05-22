@@ -3,8 +3,8 @@ import jax
 import jax.numpy as jnp
 from typing import Any
 from flax import struct
-from lbfgsb.spectral import build_spectral_model, compute_target_coefficients
-from lbfgsb.param import Param
+from helper.spectral import build_spectral_model, compute_target_coefficients
+from helper.param import Param
 from tsvec.backend import use_jaxkd_cuda
 
 
