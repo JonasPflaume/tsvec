@@ -5,6 +5,11 @@ included `ergodic_dataset` objects. It keeps the main workflow from the paper:
 train an SDF, run TSVec, then render the planned trajectory with the
 provided Open3D visualization.
 
+## Paper and Video
+
+- Paper: [Stein Variational Ergodic Surface Coverage with SE(3) Constraints](https://arxiv.org/abs/2603.09458)
+- Video: [https://www.youtube.com/watch?v=djsHoxP5ov8](https://www.youtube.com/watch?v=djsHoxP5ov8)
+
 ## Contents
 
 - `ergodic_dataset/`: meshes and colored point clouds for bunny, cylinder, hand,
@@ -84,9 +89,7 @@ parameters reported with the released experiment.
 
 ## Citation
 
-This repository accompanies the paper
-[Stein Variational Ergodic Surface Coverage with SE(3) Constraints](https://arxiv.org/abs/2603.09458),
-accepted to IEEE ICRA 2026.
+This repository accompanies the paper above, accepted to IEEE ICRA 2026.
 
 ```bibtex
 @inproceedings{li2026stein,
