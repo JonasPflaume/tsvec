@@ -24,9 +24,12 @@ SDF checkpoints are written to `checkpoints/sdf_model/` when you run
 
 ## Setup
 
+Before running the following setup, please make sure you have installed compatible nvidia driver and cuda toolkit.
+
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
+python -m pip install -U pip setuptools wheel cmake ninja scikit-build-core
 pip install -r requirements.txt
 pip install -e .
 ```
@@ -37,7 +40,7 @@ driver, change that line in `requirements.txt` to `jax[cuda13]>=0.6.0`.
 
 The requirements also install `jaxkd[cuda]`, which provides the CUDA extension
 used by `--jaxkd-backend cuda`. If the extension is unavailable on a target
-machine, use `--jaxkd-backend jax` as the fallback.
+machine, change the `jaxkd[cuda]` as `jaxkd` and use `--jaxkd-backend jax` as the fallback.
 
 ## Workflow
 
